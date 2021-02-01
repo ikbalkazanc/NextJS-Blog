@@ -1,6 +1,6 @@
 import nextConnect from 'next-connect';
 import next, { NextApiRequest, NextApiResponse } from 'next'
-import AuthenticationMiddleware from "../../../Source/Middlewares/AuthenticationMiddleware"
+//import AuthenticationMiddleware from "../../../Source/Middlewares/AuthenticationMiddleware"
 import PostService from '../../../source/services/PostService'
 
 export default nextConnect<NextApiRequest, NextApiResponse>()
@@ -10,7 +10,7 @@ export default nextConnect<NextApiRequest, NextApiResponse>()
         next();
     })
 
-    .use<NextApiRequest, NextApiResponse>(AuthenticationMiddleware)
+    //.use<NextApiRequest, NextApiResponse>(AuthenticationMiddleware)
 
     .get(async (req, res) => {
         var posts = await PostService.GetAll();
