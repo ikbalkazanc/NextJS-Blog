@@ -31,11 +31,9 @@ export default function Home() {
             <p> json-server --watch db.json --port 3001 </p>
             <p> You have to in project file directory</p>
           </a>
-       
-
           <a
             href="https://github.com/ikbalkazanc"
-            className={styles.card}
+            className={styles.card }
           >
             <h3>My Github Profile &rarr;</h3>
             <p>
