@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PostInput from '../Components/PostInput'
+import PostInput from '../components/PostInput'
 
 export default class PostInputView extends Component {
     render() {

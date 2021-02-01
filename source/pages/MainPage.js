@@ -1,20 +1,14 @@
 import Container from '@material-ui/core/Container';
-import Nav from '../../Source/Components/NavBar'
-import SlideShow from '../../Source/Components/Slider'
 import Grid from '@material-ui/core/Grid';
-import PostService from '../../Source/Services/PostService'
+import PostService from '../../source/services/PostService'
 import React, { useEffect } from 'react';
-import PostList from '../../Source/Components/PostList'
-import PostRoll from '../../Source/Components/PostRoll'
-import Footer from '../../Source/Components/Footer'
-
-import FooterView from '../Views/FooterView'
-import NavigationBarView from '../Views/NavigationBarView'
-import SliderView from '../Views/SliderView'
-import PostListView from '../Views/PostListView'
-import PostRollView from '../Views/PostRollView'
-import PostInputView from '../Views/PostInputView'
-import ChartView from '../Views/ChartView'
+import FooterView from '../views/FooterView'
+import NavigationBarView from '../views/NavigationBarView'
+import SliderView from '../views/SliderView'
+import PostListView from '../views/PostListView'
+import PostRollView from '../views/PostRollView'
+import PostInputView from '../views/PostInputView'
+import ChartView from '../views/ChartView'
 
 export default class MainPage extends React.Component {
     constructor(props) {

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PostList from '../Components/PostList'
+import PostList from '../components/PostList'
 
 export default class PostListView extends Component {
     render() {

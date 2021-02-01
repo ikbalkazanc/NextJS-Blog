@@ -1,4 +1,4 @@
-import MainPage from '../../Source/Pages/MainPage'
+import MainPage from '../../source/pages/MainPage'
 export default function Main() {
     return (
         <MainPage></MainPage>

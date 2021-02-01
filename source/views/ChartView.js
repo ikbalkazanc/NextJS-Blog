@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Chart from '../Components/Chart'
+import Chart from '../components/Chart'
 
 export default class ChartView extends Component {
     render() {
