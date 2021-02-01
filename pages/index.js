@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  
   return (
     <div className={styles.container}>
       <Head>
@@ -21,30 +22,23 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a href="/posts/main" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+            <h3>My Modular Example Blog Page&rarr;</h3>
+            <p> Require to execute fake json API in back server for effective experience.</p>
           </a>
-
           <a href="/posts/main" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+            <h3> Fake Json API executing command&rarr;</h3>
+            <p> json-server --watch db.json --port 3001 </p>
+            <p> You have to in project file directory</p>
           </a>
+       
 
           <a
-            href="/posts/main"
+            href="https://github.com/ikbalkazanc"
             className={styles.card}
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="/posts/main"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
+            <h3>My Github Profile &rarr;</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              My Repositories
             </p>
           </a>
         </div>
