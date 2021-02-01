@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport React, { Component } from 'react';\nimport Slider from '../components/Slider';\nexport default class SliderView extends Component {\n  render() {\n    return /*#__PURE__*/_jsx(Slider, {});\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

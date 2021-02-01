@@ -1,7 +1,7 @@
 module.exports =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
-/******/ 	var installedModules = {};
+/******/ 	var installedModules = require('../../ssr-module-cache.js');
 /******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
@@ -88,23 +88,154 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "KqAr");
+/******/ 	return __webpack_require__(__webpack_require__.s = 1);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "KqAr":
+/***/ 1:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("s4Ji");
+
+
+/***/ }),
+
+/***/ "GhFg":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+
+// EXTERNAL MODULE: external "axios"
+var external_axios_ = __webpack_require__("zr5I");
+
+// CONCATENATED MODULE: ./source/services/_config.js
+const URL = "http://localhost:3001/";
+// CONCATENATED MODULE: ./source/services/PostService.js
+//var json = require('../../db.json');
+
+
+
+class PostService {
+  async GetAll() {
+    /*
+    try {
+        var response = await axios.get(URL + "posts");
+        return response.data;
+    }
+    catch (err) {
+        console.log(err)
+        return json.posts
+    }*/
+    return [];
+  }
+
+  async Add(post) {
+    /*
+    post.date = new Date().toString();
+    post.id = Math.floor(Math.random() * 100000);
+    try {
+        var response = await axios.post(URL + "posts", post);
+        return response.data
+    }
+    catch (err) {
+        console.log(err)
+    }*/
+    return {};
+  }
+
+  async Delete(id) {
+    /*
+    try {
+        var response = await axios.delete(URL + "posts/" + id.toString());
+        return response.data
+    }
+    catch (err) {
+        console.log(err)
+    }*/
+    return {};
+  }
+
+}
+
+/* harmony default export */ var services_PostService = __webpack_exports__["a"] = (new PostService());
+
+/***/ }),
+
+/***/ "Pmoa":
+/***/ (function(module, exports) {
+
+module.exports = require("next");
+
+/***/ }),
+
+/***/ "Zb5a":
+/***/ (function(module, exports) {
+
+module.exports = require("next-connect");
+
+/***/ }),
+
+/***/ "s4Ji":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+// ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-    
+// EXTERNAL MODULE: external "next-connect"
+var external_next_connect_ = __webpack_require__("Zb5a");
+var external_next_connect_default = /*#__PURE__*/__webpack_require__.n(external_next_connect_);
 
-    /* harmony default export */ __webpack_exports__["default"] = (function (ctx) {
-      return Promise.all([])
-    });
-  
+// EXTERNAL MODULE: external "next"
+var external_next_ = __webpack_require__("Pmoa");
+
+// CONCATENATED MODULE: ./source/middlewares/AuthenticationMiddleware.js
+
+async function Authencation(req, res, next) {
+  console.log("auth");
+
+  if (true) {
+    next();
+  } else {}
+}
+// EXTERNAL MODULE: ./source/services/PostService.js + 1 modules
+var PostService = __webpack_require__("GhFg");
+
+// CONCATENATED MODULE: ./pages/api/post/index.ts
+
+
+
+/* harmony default export */ var api_post = __webpack_exports__["default"] = (external_next_connect_default()().use((req, res, next) => {
+  console.log("custom middleware");
+  next();
+}).use(Authencation).get(async (req, res) => {
+  var posts = await PostService["a" /* default */].GetAll();
+  res.statusCode = 200;
+  res.json(posts);
+}).post(async (req, res) => {
+  res.statusCode = 200;
+  var post = await PostService["a" /* default */].Add(req.body);
+  res.json(post);
+}).delete(async (req, res) => {
+  console.log(req.body.id);
+
+  if (req.body.id == undefined) {
+    res.statusCode = 400;
+  } else {
+    res.statusCode = 200;
+    await PostService["a" /* default */].Delete(req.body.id);
+  }
+
+  res.end();
+}));
+
+/***/ }),
+
+/***/ "zr5I":
+/***/ (function(module, exports) {
+
+module.exports = require("axios");
 
 /***/ })
 
