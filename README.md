@@ -1,4 +1,7 @@
 ## Next.js Basic Modular Blog Page
+<div align="center">
+<img src="https://raw.githubusercontent.com/ikbalkazanc/NextJS-Blog/master/public/demo.png" alt="Logo" width="80%" >
+ </div>
 ### Getting started
 First of all, clone project files to your computer. 
 ```
