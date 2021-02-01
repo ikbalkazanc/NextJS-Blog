@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport React, { Component } from 'react';\nimport Footer from '../Components/Footer';\nexport default class FooterView extends Component {\n  render() {\n    return /*#__PURE__*/_jsx(Footer, {});\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

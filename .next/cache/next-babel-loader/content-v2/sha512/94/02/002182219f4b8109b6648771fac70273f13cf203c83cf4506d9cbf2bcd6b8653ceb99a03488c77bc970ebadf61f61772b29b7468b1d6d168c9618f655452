@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport MainPage from '../../Source/Pages/MainPage';\nexport default function Main() {\n  return /*#__PURE__*/_jsx(\"p\", {\n    children: \"selamunaleyk\\xFCm ad\\u0131m azrail\"\n  });\n}","map":null,"metadata":{},"sourceType":"module"}

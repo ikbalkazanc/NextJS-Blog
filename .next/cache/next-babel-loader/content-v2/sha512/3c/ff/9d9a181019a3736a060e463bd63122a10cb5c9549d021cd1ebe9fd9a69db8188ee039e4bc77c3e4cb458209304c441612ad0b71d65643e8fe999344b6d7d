@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const URL = \"http://localhost:3001/\";","map":{"version":3,"sources":["c:/Users/iko_k/Desktop/projects/NextJS/NextJS-BlogPage/Source/Services/_config.js"],"names":["URL"],"mappings":"AAAA,OAAO,MAAMA,GAAG,GAAG,wBAAZ","sourcesContent":["export const URL = \"http://localhost:3001/\";"]},"metadata":{},"sourceType":"module"}

@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "next build && next export",
+    "start": "next start -p $PORT",
+    "heroku-postbuild" : "npm run build"
   },
   "dependencies": {
     "@devexpress/dx-react-chart": "^2.7.4",

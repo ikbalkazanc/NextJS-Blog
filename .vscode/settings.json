@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/2e4acf2c-6824-45b6-9354-499a8ddda77f/resourceGroups/iot/providers/Microsoft.Web/sites/nextjsexample",
+    "appService.deploySubpath": "."
+}

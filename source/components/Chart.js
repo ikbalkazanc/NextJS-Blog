@@ -32,7 +32,7 @@ export default class DataChart extends React.Component {
                     justifyContent: "center",
                     alignItems: "center"
                 }}>
-
+                    {/*
                     <Chart
                         data={data}
                         width={300}
@@ -41,7 +41,7 @@ export default class DataChart extends React.Component {
                         <ArgumentAxis />
                         <ValueAxis />
                         <LineSeries valueField="value" argumentField="argument" />
-                    </Chart>
+                    </Chart>*/ }
                 </CardContent>
             </Card >
         )

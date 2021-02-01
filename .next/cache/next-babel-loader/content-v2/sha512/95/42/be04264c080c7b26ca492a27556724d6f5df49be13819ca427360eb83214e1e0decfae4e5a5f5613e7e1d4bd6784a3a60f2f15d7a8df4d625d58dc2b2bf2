@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport React, { Component } from 'react';\nimport PostRoll from '../Components/PostRoll';\nexport default class PostRollView extends Component {\n  render() {\n    return /*#__PURE__*/_jsx(PostRoll, {\n      posts: this.props.posts\n    });\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

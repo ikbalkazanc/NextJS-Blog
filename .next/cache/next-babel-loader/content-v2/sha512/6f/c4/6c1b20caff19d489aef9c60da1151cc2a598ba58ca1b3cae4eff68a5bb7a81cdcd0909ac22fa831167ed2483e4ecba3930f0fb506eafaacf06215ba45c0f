@@ -1,0 +1,1 @@
+{"ast":null,"code":"import next, { NextApiRequest, NextApiResponse } from 'next';\nexport default async function Authencation(req, res, next) {\n  console.log(\"auth\");\n\n  if (true) {\n    next();\n  } else {\n    res.status(404).json({\n      result: false\n    });\n  }\n}","map":null,"metadata":{},"sourceType":"module"}
