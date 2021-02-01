@@ -19,7 +19,8 @@ export default function Home() {
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
         </p>
-
+ 
+ 
         <div className={styles.grid}>
           <a href="/posts/main" className={styles.card}>
             <h3>My Modular Example Blog Page&rarr;</h3>
